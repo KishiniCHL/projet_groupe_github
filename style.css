@@ -1,3 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
 footer {
     background-color: #3b3232 ;
     display: flex;
@@ -26,3 +32,16 @@ footer p:last-child {
 
 footer p:last-child:hover {color: #FF6B6B;}
 /* fin css footer */
+
+.menu {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: #606060;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
