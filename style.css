@@ -11,6 +11,7 @@ footer {
     align-items: center;
     width: 100%;
     padding-bottom: 10px;
+    margin-top : 1200px;
 }
 
 
@@ -95,6 +96,16 @@ body {
     background-image:url('img/163250.gif');
 }
 
+body h3 {
+    margin-top : 550px;
+    font-size: 80px;
+    text-decoration : underline;
+    text-align: center;
+    text-decoration-color: #fff;
+    color :rgb(253, 253, 253)
+    
+}
+
 
 
 *{box-sizing:border-box}
@@ -107,13 +118,13 @@ max-width: 100%;
 
 div.gallery {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 255, 255);
     float: left;
     width: 180px;
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid rgb(253, 253, 253);
   }
   
   div.gallery img {
@@ -127,7 +138,87 @@ div.gallery {
   }	
 
 .gallery {
-    margin-top: 500px;
+    margin-top: 1000px;
+    background-color: #fff;
 }
+
+
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+    margin-top: 100px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 287px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915171239559168/darkmodetwitter111.png");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915171809988608/E8Nw7pmWYAIg4sJ.png");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915172502061057/E-ct_pzWYAMyOmr.png");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915172971810838/EdH5PZrXsAEKUUR.png");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915173915525161/EeQmPjlXYAI_6Sm.png");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://cdn.discordapp.com/attachments/1019915018055192586/1019915174431436820/FKdyS1kXoAI3I8d.png");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+
+  
+  
 
 
