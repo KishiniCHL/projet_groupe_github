@@ -1,1 +1,28 @@
-test
+footer {
+    background-color: #3b3232 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    color: #9c9c9c;
+    font-size: 13px;
+}
+
+footer p:last-child {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+footer p:last-child:hover {color: #FF6B6B;}
+/* fin css footer */
