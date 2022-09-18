@@ -14,23 +14,15 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #edeee9;
     font-size: 20px; padding: 0; margin: 0;
-
 }
 
 .legende{
     font-style: italic;
 }
 
-/* header {
-    background-color: #ec2c2c;
-    box-shadow: 10px 5px 30px  rgb(242, 219, 209);
-} */
-
 .menu{
     padding: 20px 20px 10px 15px;
 }
-
-
 
 .menu ul{
     display: flex;
@@ -50,13 +42,11 @@ body{
     justify-content: space-around
 }
 
-
 .top_presentation, .bg1{
     padding-top: 50px;
     display: flex;
     justify-content: space-around
 }
-
 
 .top_presentation figure img {
 	width: 300px;
@@ -70,7 +60,6 @@ body{
 .top_presentation figure:hover img {
 	width: 450px;
 }
-
 
 .fText:hover{
     background-color: rgb(78, 78, 78);
@@ -132,7 +121,6 @@ body{
     height:300px
 }
 
-
 .bg1 {
   background-color: #ccc;
 }
@@ -153,7 +141,6 @@ h1 {
     margin-bottom: 6em;
     
 }
-
 
 .hover2 figure {
 	position: relative;
@@ -216,7 +203,6 @@ h1 {
 }
 
 
-
 @media screen and (max-width: 1023px){
     
     p {
@@ -252,5 +238,13 @@ h1 {
     #video_projet{
         width: 400px;
         margin: 0;
+    }
+
+    .top_presentation figure:hover img {
+        width: 400px;
+    }
+
+    .bg1 figure:hover img {
+        width: 400px;
     }
 }
