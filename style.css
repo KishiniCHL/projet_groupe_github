@@ -1,4 +1,84 @@
-#photo_sixtine{
-    height: 50%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #edeee9;
+
+}
+
+/* header {
+    background-color: #ec2c2c;
+    box-shadow: 10px 5px 30px  rgb(242, 219, 209);
+} */
+
+.menu{
+    padding: 20px 20px 10px 15px;
+}
+
+
+
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px;
+}
+
+
+
+.presentation{
+    background-color: #9aa79e;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.presentation:hover {
+    transition: .5s ease;
+    width: 100%;
+}
+
+.fBloc:hover .middle {
+    opacity: 1;
+    color:red
+}
+
+#photo_sixtine {
     width: 50%;
 }
+
+.fBloc{
+    background-image: url("/img/Groupe2-28.jpg");
+    background-size:cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+    border: solid;
+}
+
+.fBloc:hover{
+    height: 600px;
+    transition: .5s ease;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url("/img/Groupe2-28.jpg");
+}
+
+
