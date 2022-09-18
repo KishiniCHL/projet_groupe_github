@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ header{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #edeee9;
+    font-size: 20px; padding: 0; margin: 0;
 
 }
 
@@ -35,8 +38,20 @@ body{
     margin: 20px;
 }
 
+.fText{
+    margin:0 6em;
+    padding: 3em;
+    transition: .3s ease-in-out;
+    border:solid #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around
+}
 
 
+
+
+/*
 .presentation{
     background-color: #9aa79e;
     position: relative;
@@ -80,5 +95,58 @@ body{
     transition: .5s ease;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url("/img/Groupe2-28.jpg");
 }
+*/
 
+
+.top_presentation{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around
+}
+
+
+.top_presentation figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(202, 202, 202);
+}
+
+.top_presentation figure:hover img {
+	width: 450px;
+}
+
+.fText:hover{
+    background-color: rgb(78, 78, 78);
+    color: #ccc;
+    border: none;
+}
+
+
+/**/
+
+.section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg1 {
+  background-color: #ccc;
+}
+.bg2 {
+  background-color: #333;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+}
 
