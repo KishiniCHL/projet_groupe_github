@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "peachy-mochi";
+  src: url(fonts/peachy_mochi.ttf);
+}
+
+
 header {
   font-size: 20px;
   padding-top: 8px;
@@ -7,12 +13,8 @@ header {
 
 }
 
-@font-face {
-  font-family: "peachy-mochi";
-  src: url(fonts/peachy_mochi.ttf);
-}
 
-ul {
+.menu ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
@@ -23,6 +25,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 a:hover {
   color: rgb(193, 193, 193);
 }
