@@ -42,6 +42,10 @@ body{
     margin: 20px;
 }
 
+.menu a{
+    color: black;
+}
+
 .fText{
     margin:2em 6em 6em;
     padding: 3em;
