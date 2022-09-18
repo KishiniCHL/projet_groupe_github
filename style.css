@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: #090909;
+    background-image: url(img/stars.png);
+    background-size: contain;
+    font-family: "peachy-mochi";
+}
+
+@font-face {
+    font-family: "peachy-mochi";
+    src: url(fonts/peachy_mochi.ttf);
+}
+
+/* css header */
+header {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding: 15px 0px 15px 0px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(193, 193, 193);
+}
+/* fin css header */
+
+.intro {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.intro-gauche {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.photo-felix {
+    width: 40%;
+    clip-path:circle(50%);
+}
+.intro-droite {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+    height:max-content;
+}
+h1 {
+    /* text-align: center; */
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.presentation p {
+    font-size: 20px;
+    color: rgb(255, 209, 43)
+}
+.presentation p:first-child {
+    color: cornflowerblue;
+}
+.presentation p:last-child {
+    color:#9146ff;
+}
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.separateur-horizontal {
+    height:1px;
+    width:90%;
+    border-width:0;
+    background-color:rgb(156, 156, 156);
+    margin-left:5%;
+    margin-top:120px;
+    margin-bottom:100px;
+}
+
+h1, h2 {
+    color:white;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 50px;
+}
+.ref {
+    text-align:right;
+    color: rgb(159, 159, 159);
+    font-size: 10px;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}
+h3 {
+    margin-left: 10%;
+    font-size: 25px;
+}
+.titre-sport {
+    color: cornflowerblue;
+}
+.titre-anime {
+    color: rgb(255, 209, 43);
+}
+.titre-live {
+    color: #9146ff;
+}
+.separateur-vertical {
+    height:200px;
+    width:5px;
+    border-width:0;
+    margin-right: 10%;
+}
+.sv1 {background-color: cornflowerblue;}
+.sv2 {background-color: rgb(255, 209, 43);}
+.sv3 {background-color: #9146ff;}
+
+.passion {
+    display: flex;
+    margin-top: 30px;
+}
+.categorie {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.visuels {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.visuel-sport {
+    width: 45%;
+}
+.visuel-anime {
+    width: 30%;
+}
+.img {max-width: 100%; width: 100%;}
+
+h4 {text-align: center; color: white; font-size: 20px;}
+
+.twitch {
+    align-items: center;
+    color: #9146ff;
+}
+.twitch p {
+    color: white;
+}
+.twitch p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.lien-twitch:hover {
+    color: #9146ff;
+}
+i {font-size: 60px;}
+
+
+.projet-serveur {
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+}
+.projet-serveur p {
+    text-align: justify;
+}
+.projet-serveur a {
+    color: rgb(255, 209, 43);
+}
+.projet-serveur a:hover {
+    color: crimson;
+}
+.banniere-projet {
+    width: 50%;
+    margin-left: 25%;
+}
+.visuels-projet {
+    display: flex;
+    justify-content: space-evenly;
+}
+.visuels-projet img {
+    width: 30%;
+}
+
+#up {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#haut {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+#haut:hover {
+    color: rgb(156, 156, 156);
+}
+
+
+/* responsive */
+@media screen and (max-width: 860px) {
+    .presentation p {font-size: 15px;}
+}
+
+@media screen and (max-width: 690px) {
+    .intro {
+        display: inline-block;
+        width: 100%;
+    }
+    .intro-gauche {
+        width: 100%;
+    }
+    .intro-droite {
+        width: 100%;
+    }
+    h1 {margin-top: 20px; text-align: center;}
+    .presentation {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .presentation p {font-size: 20px;}
+
+    .passion {
+        display: inline-block;
+    }
+    .visuels {
+        display: inline-block;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .visuels div {
+        width: 100%;
+    }
+    .categorie {
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0px 10px 0px;
+    }
+    h3 {
+        text-align: center;
+        margin: 0;
+    }
+    .separateur-vertical {
+        height: 5px;
+        width: 22%;
+        margin-left: 40%;
+    }
+    i {font-size: 50px;}
+
+    .visuels-projet {
+        display: inline-block;
+    }
+    .visuels-projet img {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
